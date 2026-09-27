@@ -1,312 +1,189 @@
-\# 🚀 Space Mission Tracker
+ 🚀 Space Mission Tracker
+
+A Python command-line application for tracking upcoming space launches.
+
+The application uses the **Launch Library 2 API** to retrieve real-time information about upcoming rocket launches and provides convenient tools for searching, filtering, and viewing launch information.
+
+
+ ✨ Features
+
+* 🚀 View upcoming space launches
+* 🛰️ View the next scheduled launch
+* 🔎 Search missions by name
+* 📊 Filter launches by status
+* 📅 Filter launches by date
+* 🚀 View rocket information
+* 🌍 View launch location
+* 📺 Check livestream availability
+* 🖼️ View mission image links
+* ⚠️ Handle API connection errors
+
+
+## 🖥️ Application
+
+The application runs directly in the terminal and provides a simple interactive menu:
+
+   text
+======================================================================
+🚀 SPACE MISSION TRACKER
+======================================================================
+1. Ближайшие запуски
+2. Следующий запуск
+3. Поиск миссии
+4. Фильтр по статусу
+5. Фильтр по дате
+6. Выход
+======================================================================
 
 
 
-A simple Python application for tracking upcoming space launches using the \*\*Launch Library 2 API\*\*.
+
+## 🛠️ Technologies
+
+* **Python 3**
+* **Requests**
+* **REST API**
+* **JSON**
+* **Git & GitHub**
+* **Command Line Interface (CLI)**
 
 
 
-The project was created as a learning project to practice working with APIs, Python functions, data processing, filtering, and command-line interfaces.
+## 📡 Data Source
 
+Launch information is provided by **The Space Devs — Launch Library 2**.
 
-
-\## ✨ Features
-
-
-
-\* 🚀 View upcoming space launches
-
-\* 🛰️ View the next launch
-
-\* 🔎 Search launches by mission name
-
-\* 📊 Filter launches by status
-
-\* 📅 Filter launches by date
-
-\* 🌍 View launch location
-
-\* 🚀 View rocket information
-
-\* 📺 Check livestream availability
-
-\* 🖼️ Display mission image links
-
-\* ⚠️ Handle API connection errors
-
-
-
-\## 🛠️ Technologies
-
-
-
-\* Python 3
-
-\* Requests
-
-\* Launch Library 2 API
-
-\* Command Line Interface (CLI)
-
-
-
-\## 📡 API
-
-
-
-The application receives launch data from:
-
-
-
-\*\*The Space Devs — Launch Library 2\*\*
-
-
+Official API documentation:
 
 https://thespacedevs.com/llapi
 
 
 
-\## 📁 Project Structure
+## 📁 Project Structure
 
-
-
-```text
-
-space\_mission\_tracker/
-
+   text
+space-mission-tracker/
 │
-
-├── main.py
-
-├── main\_old.py
-
-├── requirements.txt
-
-├── README.md
-
 ├── .gitignore
-
-└── data/
-
-```
-
-
-
-\## ⚙️ Installation
+├── README.md
+├── main.py
+└── requirements.txt
 
 
 
-Clone the repository:
+## ⚙️ Installation
+
+### 1. Clone the repository
+
+   bash
+git clone https://github.com/clinchred/space-mission-tracker.git
 
 
+### 2. Open the project directory
 
-```bash
-
-git clone https://github.com/YOUR\_USERNAME/space-mission-tracker.git
-
-```
-
-
-
-Go to the project directory:
-
-
-
-```bash
-
+   bash
 cd space-mission-tracker
 
-```
 
+### 3. Create a virtual environment
 
-
-Create a virtual environment:
-
-
-
-```bash
-
+   bash
 python -m venv venv
 
-```
+
+### 4. Activate the virtual environment
+
+#### Windows
+
+   bash
+venv\Scripts\activate
 
 
+#### Linux / macOS
 
-Activate it on Windows:
-
-
-
-```bash
-
-venv\\Scripts\\activate
-
-```
+   bash
+source venv/bin/activate
 
 
+### 5. Install dependencies
 
-Install dependencies:
-
-
-
-```bash
-
+   bash
 pip install -r requirements.txt
 
-```
 
 
+## ▶️ Running the Application
 
-\## ▶️ Running the application
+Run:
 
-
-
-Start the program with:
-
-
-
-```bash
-
+   bash
 python main.py
 
-```
+
+The program will open the main menu in your terminal.
 
 
 
-You will see the main menu:
+## 🔎 Available Functions
 
-
-
-```text
-
-======================================================================
-
-🚀 SPACE MISSION TRACKER
-
-======================================================================
-
-1\. Ближайшие запуски
-
-2\. Следующий запуск
-
-3\. Поиск миссии
-
-4\. Фильтр по статусу
-
-5\. Фильтр по дате
-
-6\. Выход
-
-======================================================================
-
-```
-
-
-
-\## 🔎 Available Functions
-
-
-
-\### 1. Upcoming launches
-
-
+### 🚀 Upcoming Launches
 
 Displays the five nearest upcoming launches.
 
+### 🛰️ Next Launch
 
+Displays detailed information about the next scheduled launch.
 
-\### 2. Next launch
+### 🔎 Mission Search
 
+Searches upcoming launches by mission name.
 
-
-Displays information about the next scheduled launch.
-
-
-
-\### 3. Mission search
-
-
-
-Allows searching for launches by mission name.
-
-
-
-\### 4. Status filter
-
-
+### 📊 Status Filter
 
 Filters launches according to their current status.
 
-
-
-\### 5. Date filter
-
-
+### 📅 Date Filter
 
 Shows launches scheduled within a selected number of days.
 
 
+🎯 Project Goals
 
-\## 🎯 Project Goals
+This project was created as a practical Python project to develop experience with:
 
-
-
-The main goal of this project is to build a practical Python application while learning:
-
-
-
-\* working with REST APIs;
-
-\* processing JSON data;
-
-\* working with dates and time;
-
-\* error handling;
-
-\* organizing Python code;
-
-\* using Git and GitHub;
-
-\* creating project documentation.
+* REST APIs
+* JSON data
+* HTTP requests
+* Date and time processing
+* Error handling
+* Functions and program structure
+* Command-line applications
+* Git version control
+* GitHub project management
 
 
 
-\## 🔮 Future Improvements
-
-
+🔮 Future Improvements
 
 Planned features:
 
+* ⭐ Favorite missions
+* 🔗 Direct links to launch pages
+* 📊 Launch statistics
+* 🔎 Advanced search
+* 💾 Local data storage
+* 🖥️ Graphical user interface
+* 🌐 Web version
+* 🛰️ More detailed mission information
 
 
-\* ⭐ Favorite missions
+👨‍💻 Author
 
-\* 🔗 Direct links to launch pages
+Clinchred
 
-\* 📊 Launch statistics
-
-\* 🔎 Advanced search
-
-\* 💾 Local data storage
-
-\* 🖥️ Graphical user interface
-
-\* 🌐 Web version
+Space Mission Tracker is a personal Python project focused on space technology, APIs, and software development.
 
 
+📄 License
 
-\## 👨‍💻 Author
-
-
-
-Created as a personal Python learning project.
-
-
-
-\---
-
-
-
-⭐ If you find the project interesting, feel free to explore the code and suggest improvements.
-
-
-
+This project is intended for educational and personal use.
